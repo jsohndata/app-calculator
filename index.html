@@ -13,22 +13,13 @@
 </head>
 
 <body>
-
 <header class="container">
-    <div class="row d-flex justify-content-center">
-        <div class="col-12">
-            <h1 class="d-none">H1</h1>
-        </div>
-    </div>
-</header>
-
-<section class="container">
     <div class="row">
         <div class="col-12" >
             <p class="display text-white text-center" >0</p>
         </div>
     </div>
-</section>
+</header>
 
 <section class="container w-75 p-4 rounded-3">
     <div class="row d-flex justify-content-center btn-number ">
@@ -94,14 +85,14 @@
 
         <div class='col-4'><button 
             class='m-2 p-3 w-100 button-effect'
-            data-id='number' 
+            data-id='decimal' 
             value='.'>.</button>
         </div>
 
         <div class='col-4'><button 
             class='m-2 p-3 w-100 button-effect'
-            data-id='clear' 
-            value='clear'>clear</button>
+            data-id='random' 
+            value=''>Random</button>
         </div>
     </div>
 
@@ -130,11 +121,23 @@
             value='/'>/</button>
         </div>
 
+        <div class='col-6'><button 
+            class='m-2 p-3 w-100 button-effect'
+            data-id='delete' 
+            value='delete'>Delete</button>
+        </div>
+        
+        <div class='col-6'><button 
+            class='m-2 p-3 w-100 button-effect'
+            data-id='clear' 
+            value='clear'>Clear</button>
+        </div>
+
         <div class='col-12'><button 
             class='m-2 p-3 w-100 button-effect'
             data-id='process' 
             value='='>=</button>
-        </div>        
+        </div>  
     </div>
 </section>
 
