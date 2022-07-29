@@ -2,7 +2,7 @@
 Simple calculator using JS, HTML, CSS
 
 # Demo of the App
-(demo of the app on Firebase)[https://jsohn-calculator.web.app/]
+[Interact with the app](https://jsohn-calculator.web.app/)
 
 # ScreenShot
-!(demo of the app on Firebase)[]
+![Screen shot of the demo](https://github.com/jsohndata/app-calculator/blob/main/image/-demo.png)
