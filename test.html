@@ -1,0 +1,67 @@
+<div class="display">0</div>
+
+<button value="1" onClick="renderHTML('1')">1</button>
+<button value="2" onClick="renderHTML('2')">2</button>
+<button value="+" onClick="mathOperator('+')">+</button>
+<button value="=" onClick="processMath('=')">=</button>
+<button value="=" onClick="processMath('AC')">AC</button>
+
+<script>
+const renderHTML = param1 => { 
+    /* <= "0" to catch zero and math operators (which are below zero) */
+    if (document.querySelector('.display').innerHTML <= "0")
+        document.querySelector('.display').innerHTML = param1    
+    else
+        document.querySelector('.display').innerHTML += param1
+}
+
+
+let calculationArray = []
+
+const mathOperator = param1 => {
+    /* To avoid multiple math operator input */
+    if (param1 === document.querySelector('.display').innerHTML ) { null 
+    } else {
+        if (param1 === "+")
+        {
+            /* Add current number on display plus the math operator */
+            calculationArray.push(document.querySelector('.display').innerHTML,param1)
+
+            /* Render Result */
+            document.querySelector('.display').innerHTML = param1
+            console.log(calculationArray)
+        }
+    }
+}
+
+
+
+const processMath = param1 => {
+    switch (param1) {
+        case "=":
+            /* Add current number on display */
+            calculationArray.push(document.querySelector('.display').innerHTML)
+            
+            /* Remove the comma in the array output */
+            const arrayToStingClean = calculationArray.join('')            
+
+            console.log(arrayToStingClean)
+
+            /* Render the result */
+            document.querySelector('.display').innerHTML = stringMath(arrayToStingClean)
+
+            /* Reset the array */
+            calculationArray.length = 0
+            break;
+        
+        case "AC":
+            /* Reset the array */
+            calculationArray.length = 0
+
+            /* Render the result */
+            document.querySelector('.display').innerHTML = 0
+            break;
+    }
+}
+</script>
+<script src="./scripts/string-math.js"></script>

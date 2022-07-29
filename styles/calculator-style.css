@@ -1,0 +1,26 @@
+.display { font-size: 5.0rem;}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(351deg, rgba(2,0,36,1) 0%, rgba(113,9,121,0.9766281512605042) 41%, rgba(63,80,180,1) 67%, rgba(0,212,255,1) 100%);
+}
+
+.display {
+    word-wrap: break-word;
+}
+
+section:nth-child(3) {
+    background-color: #f4f5f6;
+    /* opacity: 0.6; */
+}
+
+div > button {
+    border-radius: 10px;
+    border: 3px solid #cccccc;
+}
+
+.btn-operator > div > button { 
+    background-color: #bababa !important;
+    opacity: 1.0;
+    z-index: 100;
+}
