@@ -9,12 +9,15 @@ Simple calculator using JS, HTML, CSS
 
 # Known Bug
 - Multiplacation of 0 doesn't work.
+
 eg) 777 + 88884268889203 * 0
 
 - Equation ending with operator doesn't work.
+
 777 + 888 + +
 
 - Multiple decimals
+
 11.1 + 11.1.1.1
 
 - After a calculation it' be nice to reset the display and equation
